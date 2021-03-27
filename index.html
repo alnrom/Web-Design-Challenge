@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="col-md-12 col-lg-12 col-12 col-sm-12">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="#" id="Homelink">Home</a>
+        <button class="navbar-toggler" type="button" 
+        data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href=visuals.html>Visualizations <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item active">
+                    <a class="nav-link" href=compares.html>Comparisons <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href=table.html>Data <span class="sr-only">(current)</span></a>
+                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""
+                    id="navbarDropdown" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="plots-drop">
+                        <a class="dropdown-item" href=visual_cloud.html>Cloudiness</a>
+                        <a class="dropdown-item" href=visual_humidity.html>Humidity</a>
+                        <a class="dropdown-item" href=visual_wind.html>Wind</a>
+                        <a class="dropdown-item" href=visual_temp.html>Temperature</a>
+                      </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+    </div>
+    
+    <div class="row">
+    <div class="col-md-1 col-sm-6" ></div>
+    <div class="col-md-11">
+    <h1>Weather Analysis</h1>
+    </div>
+    
+    <div class="col-md-9">
+
+    <p>The purpose of this project is to visualize the weather of 
+        500+ cities across the world of varying distance from the ecuator.
+    </p>
+    <p>
+        To accomplish this, I used the <a href=https://openweathermap.org/api>OpenWeatherMap API</a>
+        and <a href=https://pypi.org/project/citipy/>citypy</a> to take the
+        cities randomly.  
+    </p>
+    <p>
+       The scatter plots at the side showcase the relationship between:
+       <ul>
+           <li>Latitude vs Cloudiness</li>
+           <li>Latitude vs Humidity</li>
+           <li>Latitude vs Wind Speed</li>
+           <li>Latitude vs Temperature</li>
+       </ul>
+       Feel free to click on each plot to have a closer look.
+    </p>
+    <p>
+       Weather data is from February 14th, 2021 
+    </p>
+</div>
+
+<div class="col-md-3">
+   
+  <span class="plots-list">
+    
+    <a href=visual_cloud.html><img width=200 src=visualizations/latitude_vs_cloudiness.png class="img-fluid" alt="LatvsCloud"></a>
+    <a href=visual_humidity.html><img width=200 src=visualizations/latitude_vs_humidity.png class="img-fluid" alt="LatvsHum"></a>
+    <a href=visual_wind.html><img width=200 src=visualizations/latitude_vs_windspeed.png class="img-fluid" alt="LatvsWind"></a>
+    <a href=visual_temp.html><img width=200 src=visualizations/latVStemp.png class="img-fluid" alt="LatvsTemp"></a>
+</span>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

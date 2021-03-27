@@ -1,0 +1,57 @@
+#navbarSupportedContent {
+    background-color: rgb(91, 167, 238);
+} 
+
+/* .navbar-brand {
+    background-color: rgb(17, 17, 27);
+    
+} */
+
+nav {
+    margin-bottom: 30px;   
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+ body {
+    /* background-color:rgb(110, 75, 47); */
+    color:rgb(247, 248, 248);
+    text-shadow:rgb(8, 8, 8);
+    text-emphasis-color: black;
+    text-emphasis-position:inherit;
+    margin: 50px;
+    margin-top: 25px;
+    background-image: url(sky.jpeg);
+    
+    }
+
+    #plot-plot {
+        margin: 10px;
+        background-color: papayawhip;
+        border-color: papayawhip;
+    }
+
+    .plots-list {
+        font-size: x-small;
+    }
+
+    #plots-drop {
+
+        background-color: rgb(197, 224, 220);
+    }
+
+    #Homelink {
+        background-color: rgb(13, 156, 133);
+    }
+
+    .analysis-text {
+        margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+        #navbarSupportedContent {
+            background-color: rgb(144, 133, 236);
+
+    }
